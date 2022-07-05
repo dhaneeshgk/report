@@ -1,0 +1,23 @@
+{
+  "name": "report",
+  "version": "1.0.0",
+  "description": "To provide live display of reports from different location via thru s3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhaneeshgk/report.git"
+  },
+  "author": "Dhaneesh G K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhaneeshgk/report/issues"
+  },
+  "homepage": "https://github.com/dhaneeshgk/report#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1167.0",
+    "s3": "^4.4.0"
+  }
+}
