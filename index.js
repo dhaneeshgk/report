@@ -5,7 +5,8 @@
 
 // Dependencies
 var server = require('./lib/server');
-var reports_workers = require('./lib/workers/reports_workers');
+var agent_reports_workers = require('./lib/workers/agent_reports_workers');
+var cli = require('./lib/cli');
 
 // Declare the app
 var app = {};
@@ -17,7 +18,14 @@ app.init = function(){
   server.init();
 
   // Start the reports workers
-  reports_workers.init();
+  agent_reports_workers.init();
+
+
+  // Start the CLI, but make sure it starts last
+  setTimeout(function(){
+    cli.init();
+  },50);
+
 };
 
 // Self executing
